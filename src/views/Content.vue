@@ -1,12 +1,12 @@
 <template>
   <div class="content">
-    <Infos />
+    <InfosComponent />
     <FormComponent />
   </div>
 </template>
 <script lang="ts">
 import FormComponent from "../components/Form.vue";
-import Infos from "../components/Infos.vue";
+import InfosComponent from "../components/Infos.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -14,7 +14,7 @@ export default defineComponent({
 
   components: {
     FormComponent,
-    Infos,
+    InfosComponent,
   },
 });
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="['button', { selected }]">
+  <button type="button" class="button">
     <span>{{ buttonText }}</span>
   </button>
 </template>
@@ -11,9 +11,6 @@ export default defineComponent({
   name: "ButtonComponent",
 
   props: {
-    selected: {
-      type: Boolean,
-    },
     buttonText: {
       type: String,
       required: true,
