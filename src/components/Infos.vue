@@ -37,7 +37,7 @@ export default defineComponent({
       info: {
         email: "challenge@compass.com.br",
         phone: "+12 3456 3789",
-        address: "123 Street 456 House"
+        address: "123 Street 456 House",
       },
     };
   },

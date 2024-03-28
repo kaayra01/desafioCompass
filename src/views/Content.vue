@@ -10,7 +10,7 @@ import Infos from "../components/Infos.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "ContentComponent",
+  name: "ContentForm",
 
   components: {
     FormComponent,

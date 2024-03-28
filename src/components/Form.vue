@@ -12,26 +12,31 @@
           <ButtonComponent
             @click="setInterest($event.target.value)"
             buttonText="Front-end"
+            :class="{ active: activeButton === 'Front-end' }"
             value="Front-end"
           />
           <ButtonComponent
             @click="setInterest($event.target.value)"
             buttonText="Back-end"
+            :class="{ active: activeButton === 'Back-end' }"
             value="Back-end"
           />
           <ButtonComponent
             @click="setInterest($event.target.value)"
             buttonText="Mobile"
+            :class="{ active: activeButton === 'Mobile' }"
             value="Mobile"
           />
           <ButtonComponent
             @click="setInterest($event.target.value)"
             buttonText="AI"
+            :class="{ active: activeButton === 'AI' }"
             value="AI"
           />
           <ButtonComponent
             @click="setInterest($event.target.value)"
             buttonText="Other"
+            :class="{ active: activeButton === 'Other' }"
             value="Other"
           />
         </div>
@@ -98,13 +103,14 @@ export default defineComponent({
       message: "",
       interest: "",
       notification: "",
-      select: false,
+      activeButton: null as any,
     };
   },
 
   methods: {
-    setInterest(interesse: string) {
-      this.interest = interesse;
+    setInterest(buttonValue: string) {
+      this.activeButton = buttonValue;
+      this.interest = buttonValue;
     },
 
     async createContact() {
@@ -165,8 +171,7 @@ export default defineComponent({
   margin: 0;
 }
 
-.button:hover,
-.selecionado {
+.active {
   background-color: #000;
   color: var(--text-selected);
 }

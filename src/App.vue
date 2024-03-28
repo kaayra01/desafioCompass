@@ -1,15 +1,15 @@
 <template>
-  <ContentComponent />
+  <ContentForm />
 </template>
 
 <script lang="ts">
-import ContentComponent from "./views/Content.vue";
+import ContentForm from "./views/Content.vue";
 
 export default {
   name: "App",
 
   components: {
-    ContentComponent,
+    ContentForm,
   },
 };
 </script>
