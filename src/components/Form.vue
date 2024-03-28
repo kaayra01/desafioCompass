@@ -122,7 +122,7 @@ export default defineComponent({
       };
 
       const req = http
-        .post("/contact", data)
+        .post("contact/", data)
         .then(() => {
           this.notification =
             "Contato cadastrado! Obrigado por compartilhar seus interesses.";
