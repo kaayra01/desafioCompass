@@ -118,7 +118,7 @@ export default defineComponent({
         name: this.name,
         email: this.email,
         message: this.message,
-        interest: "teste",
+        interest: this.interest,
       };
 
       const req = http
